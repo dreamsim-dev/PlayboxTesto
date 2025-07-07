@@ -1,0 +1,24 @@
+source 'https://cdn.cocoapods.org/'
+source 'https://github.com/CocoaPods/Specs'
+
+platform :ios, '13.0'
+
+target 'UnityFramework' do
+  pod 'AppLovinMediationGoogleAdapter', '12.4.0.0'
+  pod 'AppLovinMediationGoogleAdManagerAdapter', '12.5.0.0'
+  pod 'AppLovinSDK', '13.2.0'
+  pod 'AppsFlyerFramework', '6.16.2'
+  pod 'FBSDKCoreKit', '~> 18.0.0'
+  pod 'FBSDKCoreKit_Basics', '~> 18.0.0'
+  pod 'FBSDKGamingServicesKit', '~> 18.0.0'
+  pod 'FBSDKLoginKit', '~> 18.0.0'
+  pod 'FBSDKShareKit', '~> 18.0.0'
+  pod 'Firebase/Analytics', '11.10.0'
+  pod 'Firebase/Core', '11.10.0'
+  pod 'Firebase/Crashlytics', '11.10.0'
+  pod 'Google-Mobile-Ads-SDK', '~> 12.5.0'
+  pod 'GoogleUserMessagingPlatform', '3.0.0'
+end
+target 'Unity-iPhone' do
+end
+use_frameworks! :linkage => :static
