@@ -592,13 +592,14 @@ GameObject:
   - component: {fileID: 1526475326}
   - component: {fileID: 1526475328}
   - component: {fileID: 1526475327}
+  - component: {fileID: 1526475329}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Testo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1526475326
 RectTransform:
   m_ObjectHideFlags: 0
@@ -656,6 +657,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526475325}
   m_CullTransparentMesh: 1
+--- !u!114 &1526475329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526475325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89de0f7d9dfab594798e4889422944c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1707364455
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,7 +800,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Buy Testo.png(wrong)
+  m_Text: Buy Any
 --- !u!222 &1862707058
 CanvasRenderer:
   m_ObjectHideFlags: 0
