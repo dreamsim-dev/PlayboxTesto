@@ -161,7 +161,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: world.dreamsim.ragstoriches
+    Android: world.dreamsim.testapp
     Standalone: com.DefaultCompany.2DProject
     iPhone: world.dreamsim.ragstoriches
   buildNumber:

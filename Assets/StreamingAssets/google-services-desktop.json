@@ -1,26 +1,28 @@
 {
   "project_info": {
-    "project_number": "556858135144",
-    "project_id": "rags-to-riches-91dd0",
-    "storage_bucket": "rags-to-riches-91dd0.firebasestorage.app"
+    "project_number": "183567826951",
+    "project_id": "playbox-test-app",
+    "storage_bucket": "playbox-test-app.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:556858135144:android:911c74ae5002da963761dd",
+        "mobilesdk_app_id": "1:183567826951:ios:92d8ae8fd9f2c560ca2aa2",
         "android_client_info": {
-          "package_name": "world.dreamsim.ragstoriches"
+          "package_name": "world.dreamsim.testapp"
         }
       },
-      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB9jUpBgwaTImpdly8JlnYAQzDHojxAMeU"
+          "current_key": "AIzaSyCjwu96M3fGJAY1qQHCdYWXEApxUpooqVo"
         }
       ],
       "services": {
+        "analytics_service": {
+          "status": 0
+        },
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "status": 1
         }
       }
     }
