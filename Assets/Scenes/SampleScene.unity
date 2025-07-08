@@ -1084,7 +1084,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1707364457}
   - component: {fileID: 1707364459}
-  - component: {fileID: 1707364460}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1120,21 +1119,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   productID: world.dreamsim.slumdogbillionaire.airplane
---- !u!114 &1707364460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707364455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d79542fe77bc4a3ea7d5d9fa87e76573, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Link: 
-  promotedID: world.dreamsim.slumdogbillionaire
-  campaign: dreamsim
+  onColorChange:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1923294017}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Graphic, UnityEngine.UI
+        m_MethodName: set_color
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1711836414
 GameObject:
   m_ObjectHideFlags: 0

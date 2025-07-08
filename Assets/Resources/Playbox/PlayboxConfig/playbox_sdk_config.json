@@ -19,9 +19,9 @@
     "active": true
   },
   "FacebookSdk": {
-    "AppLabel": "Rags to Riches",
-    "AppID": "675727888370178",
-    "ClientToken": "ca16c57e9a81b61b7dde51065b431861",
+    "AppLabel": "Playbox test",
+    "AppID": "1053228363637623",
+    "ClientToken": "49ec5735e2cd828ba557d417e9327647",
     "active": true
   },
   "IAP": {
