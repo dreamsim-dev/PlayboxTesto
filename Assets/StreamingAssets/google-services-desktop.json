@@ -7,22 +7,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:183567826951:ios:92d8ae8fd9f2c560ca2aa2",
+        "mobilesdk_app_id": "1:183567826951:android:00b35b6b954a8945ca2aa2",
         "android_client_info": {
           "package_name": "world.dreamsim.testapp"
         }
       },
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCjwu96M3fGJAY1qQHCdYWXEApxUpooqVo"
+          "current_key": "AIzaSyCY0n2gcAnYo5ydBriyK8L3Ta9dyyHwN0E"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 0
-        },
         "appinvite_service": {
-          "status": 1
+          "other_platform_oauth_client": []
         }
       }
     }

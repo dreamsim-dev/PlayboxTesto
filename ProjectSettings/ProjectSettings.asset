@@ -163,7 +163,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: world.dreamsim.testapp
     Standalone: com.DefaultCompany.2DProject
-    iPhone: world.dreamsim.ragstoriches
+    iPhone: world.dreamsim.testapp
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -265,8 +265,8 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: '{dedicated}: Downloads/user.keystore'
+  AndroidKeyaliasName: hit-the-star
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
