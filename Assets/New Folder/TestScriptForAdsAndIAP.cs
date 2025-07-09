@@ -55,6 +55,7 @@ public class TestScriptForAdsAndIAP : MonoBehaviour
     public void ShowTestConsentEEA()
     {
         ConsentData.DebugSettings.DebugGeography = DebugGeography.EEA;
+        //ConsentData.IsConsentComplete = false;
         
         ConsentData.ShowConsent(this, () =>
         {
@@ -66,6 +67,7 @@ public class TestScriptForAdsAndIAP : MonoBehaviour
     public void ShowTestConsentUSS()
     {
         ConsentData.DebugSettings.DebugGeography = DebugGeography.RegulatedUSState;
+        //ConsentData.IsConsentComplete = false;
         
         ConsentData.ShowConsent(this, () =>
         {
@@ -77,11 +79,17 @@ public class TestScriptForAdsAndIAP : MonoBehaviour
     public void ShowTestConsentOther()
     {
         ConsentData.DebugSettings.DebugGeography = DebugGeography.Other;
+        //ConsentData.IsConsentComplete = false;
         
         ConsentData.ShowConsent(this, () =>
         {
             Debug.Log("Show test consent");
             
         }, true);
+    }
+
+    public void ClearPlayerPrefs()
+    {
+        PlayerPrefs.DeleteAll();
     }
 }
