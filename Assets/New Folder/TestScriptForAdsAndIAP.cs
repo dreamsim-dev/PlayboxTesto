@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
+using GoogleMobileAds.Ump.Api;
 using Playbox;
+using Playbox.Consent;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -48,5 +50,38 @@ public class TestScriptForAdsAndIAP : MonoBehaviour
             
             yield return new WaitForSeconds(0.25f);
         }
+    }
+
+    public void ShowTestConsentEEA()
+    {
+        ConsentData.DebugSettings.DebugGeography = DebugGeography.EEA;
+        
+        ConsentData.ShowConsent(this, () =>
+        {
+            Debug.Log("Show test consent");
+            
+        }, true);
+    }
+    
+    public void ShowTestConsentUSS()
+    {
+        ConsentData.DebugSettings.DebugGeography = DebugGeography.RegulatedUSState;
+        
+        ConsentData.ShowConsent(this, () =>
+        {
+            Debug.Log("Show test consent");
+            
+        }, true);
+    }
+    
+    public void ShowTestConsentOther()
+    {
+        ConsentData.DebugSettings.DebugGeography = DebugGeography.Other;
+        
+        ConsentData.ShowConsent(this, () =>
+        {
+            Debug.Log("Show test consent");
+            
+        }, true);
     }
 }
