@@ -18,6 +18,8 @@ public class TapAnimation : MonoBehaviour
     [SerializeField] private UnityEvent<string> ChangeLevelButton;
     [SerializeField] private UnityEvent UpgradeLevelEvent;
     [SerializeField] [CanBeNull] private UnityEvent ClickOnObject;
+    [SerializeField] private Color startColor = Color.white;
+    [SerializeField] private Color endColor = Color.cyan;
 
     private const string tapKey = "cube_tap_count";
     private const string levelKey = "cube_level_key";
@@ -39,7 +41,7 @@ public class TapAnimation : MonoBehaviour
         LoadCounter();
         LoadLevel();
         
-        rend.material.SetColor("_BaseColor", Color.Lerp(Color.red, Color.green, level/100f));
+        rend.material.SetColor("_BaseColor", Color.Lerp(startColor, endColor, level/100f));
         
         scale = transform.localScale;
         startPosition = transform.localPosition;
@@ -131,7 +133,7 @@ public class TapAnimation : MonoBehaviour
             level = PlayerPrefs.GetFloat(levelKey);
             ChangeLevel?.Invoke($"Level : {level}");
             ChangeLevelButton?.Invoke($"Cost : {level * 100}");
-            rend.material.SetColor("_BaseColor", Color.Lerp(Color.red, Color.green, level/100f));
+            rend.material.SetColor("_BaseColor", Color.Lerp(startColor, endColor, level/100f));
         }
     }
 
@@ -148,7 +150,7 @@ public class TapAnimation : MonoBehaviour
             
             UpgradeLevelEvent?.Invoke();
             PunchAnimation();
-            rend.material.SetColor("_BaseColor", Color.Lerp(Color.red, Color.green, level/100f));
+            rend.material.SetColor("_BaseColor", Color.Lerp(startColor, endColor, level/100f));
         }
     }
 
