@@ -8,6 +8,7 @@ using Utils.Timer;
 public class Advertisement : MonoBehaviour
 {
     [SerializeField] private UnityEvent<Color> OnChangeRewardedButton;
+    [SerializeField] private UnityEvent<string> OnButtonTimer;
     [SerializeField] private float AdDuration = 1f;
     [SerializeField] private UnityEvent OnRewardedAdReceived;
     
@@ -26,19 +27,26 @@ public class Advertisement : MonoBehaviour
             Playbox.Advertisement.OnRewarderedReceived += OnRewarderedReceived;
             Playbox.Advertisement.OnLoaded += AdvertisementOnOnLoaded;
 
-            timer.OnTimerStart += () =>
-            {
-                isTimerReady = false;
+        };
+        
+        timer.OnTimerStart += () =>
+        {
+            isTimerReady = false;
                 
-            };
-            
-            timer.OnTimeRemaining += f =>
-            {
-                isTimerReady = true;
-
-            };
+        };
+        
+        timer.OnTimeRemaining += (f) =>
+        {
+            OnButtonTimer?.Invoke(f.ToString());
 
         };
+            
+        timer.OnTimeOut += () =>
+        {
+            isTimerReady = true;
+
+        };
+        
         
         timer.Start();
     }
@@ -51,6 +59,8 @@ public class Advertisement : MonoBehaviour
     private void OnRewarderedReceived()
     {
         OnRewardedAdReceived?.Invoke();
+        timer.Restart();
+        isTimerReady = false;
     }
 
     private void CheckReadyStatus()
